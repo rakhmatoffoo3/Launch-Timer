@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to bottom, #1d1e28, #25253b);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  h1 {
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+    font-size: 2.5rem; 
+  }
+  
+  .countdown {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .time-box {
+    background-color: #2c2c44;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px #191921;
+    width: 110px;
+  }
+  
+  .number {
+    display: block;
+    font-size: 3.5rem; 
+    color: #fb5e84;
+    font-weight: bold;
+  }
+  
+  .label {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1rem; 
+    color: #8385a9;
+    letter-spacing: 2px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .icon svg {
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 32px; 
+    height: 32px; 
+  }
+  
+  .icon svg:hover {
+    transform: scale(1.2);
+    fill: #fb5e84;
+  }
+  
+
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .time-box {
+      width: 90px;
+      padding: 1.5rem;
+    }
+  
+    .number {
+      font-size: 3rem;
+    }
+  
+    .label {
+      font-size: 0.9rem;
+    }
+  
+    .icon svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .countdown {
+      gap: 1rem;
+    }
+  
+    .time-box {
+      width: 80px;
+      padding: 1.2rem;
+    }
+  
+    .number {
+      font-size: 2.5rem;
+    }
+  
+    .label {
+      font-size: 0.8rem;
+    }
+  
+    .icon svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
